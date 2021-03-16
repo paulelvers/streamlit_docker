@@ -58,7 +58,7 @@ Now you should be able to interact with your app.
 
 
 ### Develop yourself
-No you can start developing your own application. Just change the source code in app.py
+Now you can start developing your own application. Just change the source code in app.py
 add more python modules and additional dependencies (which you should always add to requirements.txt).
 
 Have a look at the [Streamlit Gallery](https://streamlit.io/gallery), if you need some inspiration.
