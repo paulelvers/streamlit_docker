@@ -1,8 +1,6 @@
 # streamlit_docker
 
-A slim base repository for a streamlit app in a docker container.
-If you want to start developing a an interactive python app hosted in a docker container,
-this is a perfect starting point.
+A slim base repository for a [streamlit](https://streamlit.io/) app in a docker container.
 
 ### The project structure
 
@@ -27,33 +25,33 @@ COPY ./app /app
 CMD streamlit run app.py
 ```
 
-### Quickstart
+# Quickstart
 
-1. Fork the repository
+#### 1. Fork the repository
 ```bash
 $ git fork https://github.com/paulelvers/streamlit_docker
 ```  
 
-2. Navigate into the directory
+#### 2. Navigate into the directory
 ```bash
 $ cd streamlit_docker
 ```  
 
-3. Build the docker image
+#### 3. Build the docker image
 ```bash
-docker built -t streamlit_app:latest .
+$ docker built -t streamlit_app:latest .
 ```  
 The `.` dot tells docker to build from the Dockerfile in your current directory.
 With `-t` you will set a tag (a name for the image) and add a version like this `name:version`
 
-4. Run the image
+#### 4. Run the image
 ```bash
-docker run -p 5401:5401 streamlit_app
+$ docker run -p 5401:5401 streamlit_app
 ```  
 With `-p` you map the port of the docker container (5401) to your localhost (5401).
 and `streamlit_app` tells the docker run command, which image to run.
 
-5. Visit your app on your local machine
+#### 5. Visit your app on your local machine
 Open your browser and go to `http://localhost:8501`.
 
 Now you should be able to interact with your app.
