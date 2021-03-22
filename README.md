@@ -39,14 +39,14 @@ $ cd streamlit_docker
 
 #### 3. Build the docker image
 ```bash
-$ docker built -t streamlit_app:latest .
+$ docker build -t streamlit_app:latest .
 ```  
 The `.` dot tells docker to build from the Dockerfile in your current directory.
 With `-t` you will set a tag (a name for the image) and add a version like this `name:version`
 
 #### 4. Run the image
 ```bash
-$ docker run -p 5401:5401 streamlit_app
+$ docker run -p 8501:8501 streamlit_app
 ```  
 With `-p` you map the port of the docker container (5401) to your localhost (5401).
 and `streamlit_app` tells the docker run command, which image to run.
