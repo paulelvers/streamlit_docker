@@ -48,7 +48,7 @@ With `-t` you will set a tag (a name for the image) and add a version like this 
 ```bash
 $ docker run -p 8501:8501 streamlit_app
 ```  
-With `-p` you map the port of the docker container (5401) to your localhost (5401).
+With `-p` you map the port of the docker container (8501) to your localhost (8501).
 and `streamlit_app` tells the docker run command, which image to run.
 
 #### 5. Visit your app on your local machine
