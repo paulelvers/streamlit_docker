@@ -29,7 +29,7 @@ CMD streamlit run app.py
 
 #### 1. Fork the repository
 ```bash
-$ git fork https://github.com/paulelvers/streamlit_docker
+$ git clone https://github.com/paulelvers/streamlit_docker
 ```  
 
 #### 2. Navigate into the directory
